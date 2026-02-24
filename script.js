@@ -136,6 +136,13 @@ function renderEmptyState() {
   jobsContainer.innerHTML = `
     <div class="col-span-full border border-dashed border-slate-300 rounded-xl p-10 text-center bg-slate-50">
 
+     
+
+      <div class="img flex justify-center items-center">
+    <img src="./images/jobs.png" alt="">
+</div>
+
+
     
       <h3 class="text-xl font-semibold text-slate-900">No jobs available</h3>
       <p class="text-slate-600 mt-2">Check back soon for new job opportunities</p>
