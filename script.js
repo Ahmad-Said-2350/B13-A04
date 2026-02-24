@@ -135,9 +135,10 @@ function renderActiveTabSummary() {
 function renderEmptyState() {
   jobsContainer.innerHTML = `
     <div class="col-span-full border border-dashed border-slate-300 rounded-xl p-10 text-center bg-slate-50">
-      <p class="text-5xl mb-3">📭</p>
+
+    
       <h3 class="text-xl font-semibold text-slate-900">No jobs available</h3>
-      <p class="text-slate-600 mt-2">Try another tab or update your job status from the All section.</p>
+      <p class="text-slate-600 mt-2">Check back soon for new job opportunities</p>
     </div>
   `;
 }
@@ -164,7 +165,7 @@ function renderJobs() {
     .map(
       (job) => `
       <article class="card bg-white border border-slate-200 shadow-sm">
-        <div class="card-body">
+        <div class="card-body ">
           <div class="flex items-start justify-between gap-2">
             <div>
               <h3 class="card-title text-lg text-slate-900">${job.position}</h3>
@@ -179,8 +180,8 @@ function renderJobs() {
           <p class="text-sm text-slate-600 mt-2">${job.description}</p>
 
           <div class="card-actions justify-end mt-4">
-            <button class="btn btn-sm btn-success interview-btn" data-id="${job.id}">Interview</button>
-            <button class="btn btn-sm btn-error rejected-btn" data-id="${job.id}">Rejected</button>
+            <button class="btn btn-sm btn-outline border-green-500 text-green-500 interview-btn" data-id="${job.id}">Interview</button>
+            <button class="btn btn-sm btn-outline border-red-500 text-red-500 rejected-btn" data-id="${job.id}">Rejected</button>
             <button class="btn btn-sm btn-outline delete-btn" data-id="${job.id}">Delete</button>
           </div>
         </div>
