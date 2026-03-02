@@ -1,3 +1,5 @@
+
+
 Answers to Questions
 
 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
@@ -36,9 +38,14 @@ getElementByID : এটি শুধু একটি নির্দিষ্ট
 
 stopPropagation(): এটি ইভেন্ট বাবলিং বন্ধ করে। অর্থাৎ, কোনো চাইল্ডে ক্লিক করলে সেই ইভেন্টটি আর উপরের প্যারেন্ট এলিমেন্টগুলোর কাছে না যাক, তখন এটি ব্যবহার করতে হয়।
 
-​
 
-​
+
+
+
+
+
+
+
 
 ​
 
